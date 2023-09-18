@@ -1,0 +1,162 @@
+Form_2 As screen:
+    LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
+
+    NavigationContainer_6 As rectangle:
+        BorderColor: =RGBA(0, 72, 154, 1)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(164, 38, 44, 1)
+        FocusedBorderThickness: =4
+        Height: =64
+        HoverFill: =RGBA(164, 38, 44, 1)
+        PressedFill: =RGBA(164, 38, 44, 1)
+        Width: =1366
+        ZIndex: =2
+
+    Label1_6 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Size: =13
+        Text: ="DKM Order Intake"
+        Width: =190
+        X: =24
+        Y: =12
+        ZIndex: =3
+
+    Icon3_5 As icon.Cancel:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(164, 38, 44, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =40
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.Cancel
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =37
+        X: =1307
+        Y: =12
+        ZIndex: =7
+
+    Button2_11 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(164, 38, 44, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -10%)
+        OnSelect: =Navigate( Form_1, ScreenTransition.Cover )
+        PressedBorderColor: =ColorFade(RGBA(164, 38, 44, 1), -50%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(164, 38, 44, 1), -30%)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =15
+        Text: ="Volgende"
+        Width: =178
+        X: =1150
+        Y: =692
+        ZIndex: =10
+
+    Button2_12 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(166, 166, 166, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -10%)
+        OnSelect: =Navigate( Start, ScreenTransition.Cover )
+        PressedBorderColor: =ColorFade(RGBA(164, 38, 44, 1), -50%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(164, 38, 44, 1), -30%)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =15
+        Text: ="Einde tour"
+        Width: =178
+        X: =24
+        Y: =703
+        ZIndex: =11
+
+    Container2_1 As groupContainer.horizontalAutoLayoutContainer:
+        Height: =581
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        LayoutOverflowX: =LayoutOverflow.Scroll
+        LayoutOverflowY: =LayoutOverflow.Scroll
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =648
+        X: =24
+        Y: =84
+        ZIndex: =12
+
+        Label4_2 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Size: =16
+            Text: |-
+                ="BON
+                "
+            Width: =300
+            ZIndex: =1
+
+        Radio1_1 As radio:
+            BorderColor: =RGBA(51, 51, 51, 1)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            Default: ="Levering"
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            HoverColor: =RGBA(51, 51, 51, 1)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Items: =["Levering","Bestelling"]
+            OnSelect: =If(Radio1_1.Selected.Value="Levering",Set(levering,true),Set(levering,false))
+            PaddingBottom: =5
+            PaddingTop: =5
+            PressedColor: =RGBA(51, 51, 51, 1)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            RadioBorderColor: =RGBA(51, 51, 51, 1)
+            RadioSelectionFill: =RGBA(164, 38, 44, 1)
+            Size: =13
+            ZIndex: =2
+
