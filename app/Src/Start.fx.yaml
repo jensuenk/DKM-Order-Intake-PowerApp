@@ -1,6 +1,68 @@
 Start As screen:
     LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
 
+    "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver5.0'":
+        BorderColor: =RGBA(166, 166, 166, 1)
+        DelayItemLoading: =true
+        Height: =420
+        Items: =varTourData
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        Selectable: =false
+        TemplatePadding: =0
+        TemplateSize: =70
+        Width: =836
+        X: =484
+        Y: =234
+        ZIndex: =1
+
+        Title1 As label:
+            Color: =RGBA(50, 49, 48, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =$"{ThisItem.Naam} ({ThisItem.Klant})"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 86
+            X: =16
+            Y: =(Parent.TemplateHeight - (Self.Size * 1.8 + Subtitle1.Size * 1.8)) / 2
+            ZIndex: =1
+
+        Subtitle1 As label:
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =12
+            Text: =$"{ThisItem.Adres} {ThisItem.Postcode} {ThisItem.Gemeente}"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title1.Width
+            X: =Title1.X
+            Y: =Title1.Y + Title1.Height
+            ZIndex: =2
+
+        Separator1 As rectangle:
+            BorderColor: =RGBA(230, 230, 230, 1)
+            BorderThickness: =1
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - Self.Height
+            ZIndex: =4
+
     NavigationContainer As rectangle:
         BorderColor: =RGBA(0, 72, 154, 1)
         BorderStyle: =BorderStyle.None
@@ -74,7 +136,7 @@ Start As screen:
         HoverBorderColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
         HoverColor: =RGBA(51, 51, 51, 1)
         HoverFill: =RGBA(212, 212, 212, 1)
-        Items: =Filter(Documents, 'Folder path'=$"{varToursFolder}/", IsFolder=false)
+        Items: =Filter(Documents, 'Folder path'=varToursFolder, IsFolder=false)
         OnSelect: =ClearCollect(varTourData, 'GetTourData'.Run(""))
         PaddingBottom: =5
         PaddingLeft: =12
@@ -176,143 +238,4 @@ Start As screen:
         X: =172
         Y: =704
         ZIndex: =11
-
-    "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
-        BorderColor: =RGBA(166, 166, 166, 1)
-        DelayItemLoading: =true
-        Height: =70
-        Items: =varTourData
-        Layout: =Layout.Vertical
-        LoadingSpinner: =LoadingSpinner.Data
-        TemplatePadding: =0
-        TemplateSize: =104
-        X: =484
-        Y: =234
-        ZIndex: =12
-
-        Image3 As image:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledFill: =RGBA(0, 0, 0, 0)
-            FocusedBorderThickness: =4
-            Height: =72
-            HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverFill: =RGBA(0, 0, 0, 0)
-            Image: =SDP_logo
-            OnSelect: =Select(Parent)
-            PressedBorderColor: =RGBA(0, 0, 0, 0)
-            PressedFill: =RGBA(0, 0, 0, 0)
-            RadiusBottomLeft: =8
-            RadiusBottomRight: =8
-            RadiusTopLeft: =8
-            RadiusTopRight: =8
-            Width: =72
-            X: =16
-            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-            ZIndex: =1
-
-        Title1 As label:
-            Color: =RGBA(50, 49, 48, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =Font.'Segoe UI'
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =Self.Size * 1.8
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Text: =ThisItem.Value
-            VerticalAlign: =VerticalAlign.Top
-            Width: =Parent.TemplateWidth - 173
-            X: =103
-            Y: =(Parent.TemplateHeight - (Self.Size * 1.8 + Subtitle1.Size * 1.8)) / 2
-            ZIndex: =2
-
-        Subtitle1 As label:
-            Color: =RGBA(51, 51, 51, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =Font.'Segoe UI'
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =Self.Size * 1.8
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =12
-            Text: =ThisItem.
-            VerticalAlign: =VerticalAlign.Top
-            Width: =Title1.Width
-            X: =Title1.X
-            Y: =Title1.Y + Title1.Height
-            ZIndex: =3
-
-        NextArrow1 As icon.ChevronRight:
-            AccessibleLabel: =Self.Tooltip
-            Color: =RGBA(166, 166, 166, 1)
-            Height: =50
-            Icon: =Icon.ChevronRight
-            OnSelect: =Select(Parent)
-            PaddingBottom: =16
-            PaddingLeft: =16
-            PaddingRight: =16
-            PaddingTop: =16
-            Tooltip: ="View item details"
-            Width: =50
-            X: =Parent.TemplateWidth - Self.Width - 12
-            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-            ZIndex: =4
-
-        Separator1 As rectangle:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            Fill: =RGBA(255, 255, 255, 1)
-            Height: =8
-            OnSelect: =Select(Parent)
-            Width: =Parent.TemplateWidth
-            Y: =Parent.TemplateHeight - Self.Height
-            ZIndex: =5
-
-        Rectangle3 As rectangle:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            Fill: =ColorFade(RGBA(164, 38, 44, 1), -30%)
-            Height: =Parent.TemplateHeight - Separator1.Height
-            OnSelect: =Select(Parent)
-            Visible: =ThisItem.IsSelected
-            Width: =4
-            ZIndex: =6
-
-    DataTable2 As dataTable.datatable:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.Solid
-        Color: =RGBA(51, 51, 51, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisplayMode: =DisplayMode.Edit
-        Fill: =RGBA(0, 0, 0, 0)
-        Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Normal
-        HeadingColor: =RGBA(255, 255, 255, 1)
-        HeadingFill: =RGBA(164, 38, 44, 1)
-        HeadingFont: =Font.'Segoe UI'
-        HeadingFontWeight: =FontWeight.Normal
-        HeadingSize: =13
-        Height: =216
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =RGBA(164, 38, 44, 1)
-        InputFill: =RGBA(255, 255, 255, 1)
-        InvertedColor: =RGBA(255, 255, 255, 1)
-        Items: =varTourData
-        LinkColor: =RGBA(0, 134, 208, 1)
-        PrimaryColor1: =RGBA(164, 38, 44, 1)
-        PrimaryColor2: =ColorFade(RGBA(164, 38, 44, 1), -30%)
-        PrimaryColor3: =ColorFade(RGBA(164, 38, 44, 1), -50%)
-        SelectedColor: =RGBA(51, 51, 51, 1)
-        SelectedFill: =RGBA(164, 38, 44, .2)
-        Size: =13
-        Width: =765
-        X: =456
-        Y: =420
-        ZIndex: =15
 
