@@ -6,6 +6,13 @@
       "id": "/providers/microsoft.powerapps/apis/shared_excelonlinebusiness"
     },
     "datasets": {
+      "groups%252Fc29b606e-2691-499a-9de9-d7135b364392,b%2521RFmfDHTNcESRDhr0nA8xwDYxz4fgpohHmEFUcv6Ph3YSfn3NAeOBTrJGFNgcbrTj,01O3HQEWLA52NELFLPLFEJODD3PYOF64SH": {
+        "dataSources": {
+          "Table1": {
+            "tableName": "{3D7DB194-C18B-7745-85FA-ECFF2C41852F}"
+          }
+        }
+      },
       "groups%252Fc29b606e-2691-499a-9de9-d7135b364392,b%2521RFmfDHTNcESRDhr0nA8xwDYxz4fgpohHmEFUcv6Ph3YSfn3NAeOBTrJGFNgcbrTj,01O3HQEWNSUJT5MEU3AFG2DLRFNHENRHTF": {
         "dataSources": {
           "Table5": {
@@ -15,7 +22,8 @@
       }
     },
     "dataSources": [
-      "Table5"
+      "Table5",
+      "Table1"
     ],
     "dependencies": {},
     "dependents": [
@@ -169,6 +177,34 @@
     "dependents": [],
     "id": "a6e5e257-4c08-4287-92c0-4de13231f334"
   },
+  "e9340003-946e-4517-a648-0cfa39918597": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "c176ec00-e522-458d-871d-9e69c80f798a"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "c176ec00-e522-458d-871d-9e69c80f798a"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "GetFileContent"
+    ],
+    "dependencies": {
+      "shared_sharepointonline": "fe3173bb-93ae-42c1-bf3c-3b3444652df2"
+    },
+    "dependents": [],
+    "id": "e9340003-946e-4517-a648-0cfa39918597"
+  },
   "fe3173bb-93ae-42c1-bf3c-3b3444652df2": {
     "connectionRef": {
       "displayName": "SharePoint",
@@ -188,7 +224,9 @@
       "Documents"
     ],
     "dependencies": {},
-    "dependents": [],
+    "dependents": [
+      "e9340003-946e-4517-a648-0cfa39918597"
+    ],
     "id": "fe3173bb-93ae-42c1-bf3c-3b3444652df2"
   }
 }
