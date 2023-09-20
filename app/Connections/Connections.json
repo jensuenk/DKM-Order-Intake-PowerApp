@@ -1,4 +1,28 @@
 {
+  "014de08a-0567-4956-867d-d62fe492e6f5": {
+    "connectionRef": {
+      "displayName": "Excel Online (Business)",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/laborbol/partial-builds/ase-v3/1.0.1653.3402/excelonlinebusiness/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_excelonlinebusiness"
+    },
+    "datasets": {
+      "groups%252Fc29b606e-2691-499a-9de9-d7135b364392,b%2521RFmfDHTNcESRDhr0nA8xwDYxz4fgpohHmEFUcv6Ph3YSfn3NAeOBTrJGFNgcbrTj,01O3HQEWNSUJT5MEU3AFG2DLRFNHENRHTF": {
+        "dataSources": {
+          "Table5": {
+            "tableName": "{A63E144E-FBD3-E84A-8FAF-F852131F123A}"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Table5"
+    ],
+    "dependencies": {},
+    "dependents": [
+      "35e86d97-64bd-4795-8684-ec23d2ba925c"
+    ],
+    "id": "014de08a-0567-4956-867d-d62fe492e6f5"
+  },
   "02a1e821-b7c2-461e-b7a4-6caf013e7160": {
     "appActions": [
       "Run"
@@ -55,28 +79,6 @@
     ],
     "id": "04273afa-c591-4a1a-849b-9c9fb3abf666"
   },
-  "07f92e65-37fc-47f7-bafe-8b3c32c78fff": {
-    "connectionRef": {
-      "displayName": "Excel Online (Business)",
-      "iconUri": "https://connectoricons-prod.azureedge.net/u/laborbol/partial-builds/ase-v3/1.0.1653.3402/excelonlinebusiness/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_excelonlinebusiness"
-    },
-    "datasets": {
-      "groups%252Fc29b606e-2691-499a-9de9-d7135b364392,b%2521RFmfDHTNcESRDhr0nA8xwDYxz4fgpohHmEFUcv6Ph3YSfn3NAeOBTrJGFNgcbrTj,01O3HQEWJSBF2OFBSDXFD3V2I54DAFS2GR": {
-        "dataSources": {
-          "Table2": {
-            "tableName": "{88C3B4CA-38A7-A341-89C5-19E55096BF8F}"
-          }
-        }
-      }
-    },
-    "dataSources": [
-      "Table2"
-    ],
-    "dependencies": {},
-    "dependents": [],
-    "id": "07f92e65-37fc-47f7-bafe-8b3c32c78fff"
-  },
   "2efdd9ab-1cee-430b-82aa-a44b767ac217": {
     "appActions": [],
     "connectionRef": {
@@ -94,6 +96,40 @@
       "02a1e821-b7c2-461e-b7a4-6caf013e7160"
     ],
     "id": "2efdd9ab-1cee-430b-82aa-a44b767ac217"
+  },
+  "35e86d97-64bd-4795-8684-ec23d2ba925c": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "014de08a-0567-4956-867d-d62fe492e6f5": {
+          "value": "shared_excelonlinebusiness"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "de48b610-8664-4b64-a052-7a5df90f00c6"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_excelonlinebusiness": {
+          "value": "014de08a-0567-4956-867d-d62fe492e6f5"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "de48b610-8664-4b64-a052-7a5df90f00c6"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "GetTourData"
+    ],
+    "dependencies": {
+      "shared_excelonlinebusiness": "014de08a-0567-4956-867d-d62fe492e6f5"
+    },
+    "dependents": [],
+    "id": "35e86d97-64bd-4795-8684-ec23d2ba925c"
   },
   "a6e5e257-4c08-4287-92c0-4de13231f334": {
     "appActions": [

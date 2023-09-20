@@ -120,46 +120,6 @@ Form As screen:
         Y: =84
         ZIndex: =12
 
-        Label4_1 As label:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            Color: =RGBA(51, 51, 51, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Bold
-            Size: =16
-            Text: |-
-                ="BON
-                "
-            Width: =300
-            ZIndex: =1
-
-        Radio1 As radio:
-            BorderColor: =RGBA(51, 51, 51, 1)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            Color: =RGBA(51, 51, 51, 1)
-            Default: ="Levering"
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            Font: =Font.'Segoe UI'
-            HoverColor: =RGBA(51, 51, 51, 1)
-            HoverFill: =RGBA(0, 0, 0, 0)
-            Items: =["Levering","Bestelling"]
-            OnSelect: =If(Radio1.Selected.Value="Levering",Set(levering,true),Set(levering,false))
-            PaddingBottom: =5
-            PaddingTop: =5
-            PressedColor: =RGBA(51, 51, 51, 1)
-            PressedFill: =RGBA(0, 0, 0, 0)
-            RadioBorderColor: =RGBA(51, 51, 51, 1)
-            RadioSelectionFill: =RGBA(164, 38, 44, 1)
-            Size: =13
-            ZIndex: =2
-
         Label4 As label:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None

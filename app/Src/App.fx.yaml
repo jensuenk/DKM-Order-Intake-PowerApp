@@ -2,7 +2,7 @@ App As appinfo:
     BackEnabled: =false
     OnStart: |-
         =Start;
-        Set(varToursFolder, "Gedeelde documenten/WebA/PowerPlatform/DKM Order Intake/Tours")
+        Set(varToursFolder, "Gedeelde documenten/WebA/PowerPlatform/DKM Order Intake/Tours/")
     StartScreen: =Start
     Theme: =PowerAppsTheme
 
