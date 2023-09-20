@@ -7,15 +7,41 @@
         <property name="Listrowspresentinatable_File" type="string" />
       </object>
       <string name="ResponseActionOutput_items_def_ItemInternalId_def" />
-      <string name="ResponseActionOutput_items_def_Col1_def" />
-      <string name="ResponseActionOutput_items_def_Col2_def" />
-      <string name="ResponseActionOutput_items_def_Col3_def" />
+      <string name="ResponseActionOutput_items_def_Klant_def" />
+      <string name="ResponseActionOutput_items_def_E-mailadres_def" />
+      <string name="ResponseActionOutput_items_def_Naam_def" />
+      <string name="ResponseActionOutput_items_def_Adres_def" />
+      <string name="ResponseActionOutput_items_def_Postcode_def" />
+      <string name="ResponseActionOutput_items_def_Gemeente_def" />
+      <string name="ResponseActionOutput_items_def_Tour_ux20_NR_def" />
+      <string name="ResponseActionOutput_items_def_Volgorde_def" />
+      <string name="ResponseActionOutput_items_def_Telefoon_def" />
+      <string name="ResponseActionOutput_items_def_Contactpersoon2_def" />
+      <string name="ResponseActionOutput_items_def_Marktsegment_def" />
+      <string name="ResponseActionOutput_items_def_Tour_def" />
+      <string name="ResponseActionOutput_items_def_Laatst_ux20_bezocht_def" />
+      <string name="ResponseActionOutput_items_def_Laatst_ux20_gekocht_def" />
+      <string name="ResponseActionOutput_items_def_Algemene_ux20_informatie_ux20__x003a__def" />
+      <string name="ResponseActionOutput_items_def___PowerAppsId___def" />
       <string name="ResponseActionOutput_items_def__ux40_odata_etag_def" />
       <object name="ResponseActionOutput_items_def">
         <property name="ItemInternalId" type="string" />
-        <property name="Col1" type="string" />
-        <property name="Col2" type="string" />
-        <property name="Col3" type="string" />
+        <property name="Klant" type="string" />
+        <property name="E-mailadres" type="string" />
+        <property name="Naam" type="string" />
+        <property name="Adres" type="string" />
+        <property name="Postcode" type="string" />
+        <property name="Gemeente" type="string" />
+        <property name="Tour NR" type="string" />
+        <property name="Volgorde" type="string" />
+        <property name="Telefoon" type="string" />
+        <property name="Contactpersoon2" type="string" />
+        <property name="Marktsegment" type="string" />
+        <property name="Tour" type="string" />
+        <property name="Laatst bezocht" type="string" />
+        <property name="Laatst gekocht" type="string" />
+        <property name="Algemene informatie _x003a_" type="string" />
+        <property name="__PowerAppsId__" type="string" />
         <property name="@odata.etag" type="string" />
       </object>
       <array typeRef="ResponseActionOutput_items_def" name="ResponseActionOutput" />
