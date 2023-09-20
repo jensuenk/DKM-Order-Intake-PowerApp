@@ -55,6 +55,28 @@
     ],
     "id": "04273afa-c591-4a1a-849b-9c9fb3abf666"
   },
+  "07f92e65-37fc-47f7-bafe-8b3c32c78fff": {
+    "connectionRef": {
+      "displayName": "Excel Online (Business)",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/laborbol/partial-builds/ase-v3/1.0.1653.3402/excelonlinebusiness/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_excelonlinebusiness"
+    },
+    "datasets": {
+      "groups%252Fc29b606e-2691-499a-9de9-d7135b364392,b%2521RFmfDHTNcESRDhr0nA8xwDYxz4fgpohHmEFUcv6Ph3YSfn3NAeOBTrJGFNgcbrTj,01O3HQEWJSBF2OFBSDXFD3V2I54DAFS2GR": {
+        "dataSources": {
+          "Table2": {
+            "tableName": "{88C3B4CA-38A7-A341-89C5-19E55096BF8F}"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Table2"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "07f92e65-37fc-47f7-bafe-8b3c32c78fff"
+  },
   "2efdd9ab-1cee-430b-82aa-a44b767ac217": {
     "appActions": [],
     "connectionRef": {
@@ -110,5 +132,27 @@
     },
     "dependents": [],
     "id": "a6e5e257-4c08-4287-92c0-4de13231f334"
+  },
+  "fe3173bb-93ae-42c1-bf3c-3b3444652df2": {
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1654/1.0.1654.3414/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://sdpnv.sharepoint.com/sites/WEB2": {
+        "dataSources": {
+          "Documents": {
+            "tableName": "cd7d7e12-e301-4e81-b246-14d81c6eb4e3"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Documents"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "fe3173bb-93ae-42c1-bf3c-3b3444652df2"
   }
 }
