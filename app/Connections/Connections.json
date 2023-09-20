@@ -27,7 +27,7 @@
     ],
     "dependencies": {},
     "dependents": [
-      "35e86d97-64bd-4795-8684-ec23d2ba925c"
+      "fd6a2f64-1579-46ea-9557-5550afff85ab"
     ],
     "id": "014de08a-0567-4956-867d-d62fe492e6f5"
   },
@@ -105,40 +105,6 @@
     ],
     "id": "2efdd9ab-1cee-430b-82aa-a44b767ac217"
   },
-  "35e86d97-64bd-4795-8684-ec23d2ba925c": {
-    "connectionRef": {
-      "displayName": "Logic flows",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
-      "parameterHints": {
-        "014de08a-0567-4956-867d-d62fe492e6f5": {
-          "value": "shared_excelonlinebusiness"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "de48b610-8664-4b64-a052-7a5df90f00c6"
-        }
-      },
-      "parameterHintsV2": {
-        "shared_excelonlinebusiness": {
-          "value": "014de08a-0567-4956-867d-d62fe492e6f5"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "de48b610-8664-4b64-a052-7a5df90f00c6"
-        }
-      }
-    },
-    "datasets": {},
-    "dataSources": [
-      "GetTourData"
-    ],
-    "dependencies": {
-      "shared_excelonlinebusiness": "014de08a-0567-4956-867d-d62fe492e6f5"
-    },
-    "dependents": [],
-    "id": "35e86d97-64bd-4795-8684-ec23d2ba925c"
-  },
   "a6e5e257-4c08-4287-92c0-4de13231f334": {
     "appActions": [
       "Run"
@@ -210,6 +176,34 @@
     },
     "dependents": [],
     "id": "e9340003-946e-4517-a648-0cfa39918597"
+  },
+  "fd6a2f64-1579-46ea-9557-5550afff85ab": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "de48b610-8664-4b64-a052-7a5df90f00c6"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "de48b610-8664-4b64-a052-7a5df90f00c6"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "GetTourData"
+    ],
+    "dependencies": {
+      "shared_excelonlinebusiness": "014de08a-0567-4956-867d-d62fe492e6f5"
+    },
+    "dependents": [],
+    "id": "fd6a2f64-1579-46ea-9557-5550afff85ab"
   },
   "fe3173bb-93ae-42c1-bf3c-3b3444652df2": {
     "connectionRef": {

@@ -6,6 +6,20 @@
       <object name="ManualTriggerInput">
         <property name="Listrowspresentinatable_File" type="string" />
       </object>
+      <string name="ResponseActionOutput_items_def_ItemInternalId_def" />
+      <string name="ResponseActionOutput_items_def_Col1_def" />
+      <string name="ResponseActionOutput_items_def_Col2_def" />
+      <string name="ResponseActionOutput_items_def_Col3_def" />
+      <string name="ResponseActionOutput_items_def__ux40_odata_etag_def" />
+      <object name="ResponseActionOutput_items_def">
+        <property name="ItemInternalId" type="string" />
+        <property name="Col1" type="string" />
+        <property name="Col2" type="string" />
+        <property name="Col3" type="string" />
+        <property name="@odata.etag" type="string" />
+      </object>
+      <array typeRef="ResponseActionOutput_items_def" name="ResponseActionOutput" />
+      <object name="Run_responses_default_def" />
     </jsonTypes>
   </grammars>
   <resources siena:authenticationProviderHref="#PowerAppAuth" base="https://europe-002.azure-apim.net/apim/logicflows">
@@ -21,6 +35,9 @@
             <param style="plain" name="Listrowspresentinatable_File" path="/Listrowspresentinatable_File" type="xs:string" required="true" />
           </representation>
         </request>
+        <response>
+          <representation mediaType="application/json" element="service:ResponseActionOutput" />
+        </response>
       </method>
     </resource>
   </resources>

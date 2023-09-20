@@ -75,7 +75,7 @@ Start As screen:
         HoverColor: =RGBA(51, 51, 51, 1)
         HoverFill: =RGBA(212, 212, 212, 1)
         Items: =Filter(Documents, 'Folder path'=$"{varToursFolder}/", IsFolder=false)
-        OnSelect: =ClearCollect(varTourData, 'GetTourData'.Run())
+        OnSelect: =ClearCollect(varTourData, 'GetTourData'.Run(""))
         PaddingBottom: =5
         PaddingLeft: =12
         PaddingRight: =5
